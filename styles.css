@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+margin: 0;
+}
+
+#AWS{
+background-color: #ff9900f8;
+font-family: 'Montserrat', sans-serif;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 50px;
+}
+
+#aws-text{
+display:flex;
+}
+
+#awsLogo{
+ width: 75px;
+height: 75px;
+margin-left: 50px;
+border-radius:6px;
+}
+
+#close{
+background-color: white;
+width:25px;
+text-align:center;
+line-height:25px;
+border-radius:2px;
+outline: none;
+user-select:none;
+cursor:pointer;
+}
+#close:hover{
+background-color:gray;
+}
