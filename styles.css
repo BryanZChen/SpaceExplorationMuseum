@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{margin: 0;
 padding: 0;}
+
+/* Amazon Banner */
 #AWS{
 position: fixed;
 bottom: 0;
@@ -36,6 +38,8 @@ cursor:pointer;
 #close:hover{
 background-color:gray;
 }
+
+/*Banner*/
 #banner{
     display: flex;
     flex-wrap: wrap;
@@ -45,17 +49,24 @@ background-color:gray;
     align-content: flex-start;
     margin-right: 50px;
     margin-left: 50px;
-    gap: 10px 100px;
+    margin-top: 5px;
+
+    /* gap: 10px 100px; */
     position: fixed;
     top: 0px;
     padding-bottom: 5px;
+    z-index: 1000;
 }
+
+/*Main Text Font*/
 .text{
     text-align: center;
     flex-shrink: 1;
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+
+/* Image and Circles */
 .parallax{
     background-image: url("milkywaybase.jpg");
     height: 100vh;
@@ -134,36 +145,64 @@ background-color:gray;
     align-items: center;
     align-content: center;
 }
-#textbody{
-    color: black
-}
-.main{
-    margin-top: 300px;
-    height: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:flex-start;
-    /* max-width: 1700px; */
-    /* margin-left: 100px;
-    margin-right: 100px; */
 
-    /* flex-direction: row; */
+/* Navigation Bar */
+#navbar{
+    padding-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(0, 26, 112);
 }
-#essaydiv{
-    /* flex: auto; */
-    max-width: 60vw;
-    margin-left: 200px;
-    margin-right: 100px;
-    background-color: red;
-    font-size: 1.5em;
+.nav-tabs .nav-link{
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
 }
+
+/* Body of the tab */
+.main{
+    margin-top: 100px;
+    height: 1000px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.textbody{
+    color: black;
+    font-size: 1.1em;
+    text-align: left;
+    text-indent :2em;
+}
+/* Image in text */
+.figureleft{
+    float: left;
+}
+.figureright{
+    float: right;
+}
+.imageleft{
+    margin-right: 2em;
+    max-width: 15em;
+    border-radius: 0.5em;
+}
+.imageright{
+    margin-left: 2em;
+    max-width: 15em;
+    border-radius: 0.5em;
+}
+.textlabel{
+    color: black;
+    margin-top: 0;
+    font-size: 0.7em; 
+}
+
+/* Map */
 #layout{
     /* flex: auto; */
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 20em;
     margin-right: 200px;
     background-color: gold;
 }
@@ -172,10 +211,33 @@ background-color:gray;
     max-width: 600px;
     height: auto;
 }
-/* #test{
-    margin: 0 auto;
-    max-width: 1700px;
-} */
+
+
+
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    /* fix this later */
+    /* justify-content: s; */
+    align-items: baseline;
+    align-content: flex-start;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 5px;
+
+    /* gap: 10px 100px; */
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 5px;
+}
+@media only screen and (max-width: 850px){
+    .row{
+        flex-wrap: wrap;
+    }
+
+}
+
 @media only screen and (max-width: 550px){
 #AWS{background-color: green;}
 #aws-text{font-size: 10px;}
