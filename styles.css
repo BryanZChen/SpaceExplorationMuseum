@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body{margin: 0;}
+body{margin: 0;
+padding: 0;}
 #AWS{
+position: fixed;
+bottom: 0;
 background-color: #ff9900f8;
 font-family: 'Montserrat', sans-serif;
 height: 100px;
@@ -9,19 +12,16 @@ align-items: center;
 justify-content: space-between;
 width:100%;
 }
-
 #aws-text{
 margin-left:50px;
 display:flex;
 }
-
 #awsLogo{
  width: 4rem;
 height: 4rem;
 margin-left: 50px;
 border-radius:6px;
 }
-
 #close{
 margin-right:50px;
 background-color: white;
@@ -36,18 +36,169 @@ cursor:pointer;
 #close:hover{
 background-color:gray;
 }
+#banner{
+    display: flex;
+    flex-wrap: wrap;
+    /* fix this later */
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-start;
+    margin-right: 50px;
+    margin-left: 50px;
+    gap: 10px 100px;
+    position: fixed;
+    top: 0px;
+    padding-bottom: 5px;
+}
+.text{
+    text-align: center;
+    flex-shrink: 1;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.parallax{
+    background-image: url("milkywaybase.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
 
+    display: block;
+}
+#circleline{
+    position: absolute;
+    /* Create the circle */
+    width: 70vh;
+    max-width: 90vw;
+    height: 70vh;
+    max-height: 90vw;
+    border-radius: 35vh;
+
+    /* Style it */
+    background-color: rgba(127, 255, 212, 0);
+    border: 1px solid white;
+
+
+    display: flex;
+    /* center horizontally */
+    justify-content: center;
+    /* center vertically */
+    align-items: center;
+
+    /* Get to center */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+#circleout{
+    width: 68vh;
+    max-width: 88vw;
+    height: 68vh;
+    max-height: 88vw;
+    border-radius: 34vh;
+
+    background-color: rgba(225, 225, 225, 0.18);
+    position: absolute;
+}
+#circleinner{
+    width: 64vh;
+    max-width: 84vw;
+    height: 64vh;
+    max-height: 84vw;
+    border-radius: 32vh;
+
+    background-color: rgba(225, 225, 225, 0.18);
+    position: absolute;
+
+    /* Center div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+#circletext{
+    width: 80%;
+    height: 80%;
+
+    font-size: 3vh;
+
+    /* Center text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#textbody{
+    color: black
+}
+.main{
+    margin-top: 300px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    /* max-width: 1700px; */
+    /* margin-left: 100px;
+    margin-right: 100px; */
+
+    /* flex-direction: row; */
+}
+#essaydiv{
+    /* flex: auto; */
+    max-width: 60vw;
+    margin-left: 200px;
+    margin-right: 100px;
+    background-color: red;
+    font-size: 1.5em;
+}
+#layout{
+    /* flex: auto; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 700px;
+    margin-right: 200px;
+    background-color: gold;
+}
+#map{
+    margin-top: 2em;
+    max-width: 600px;
+    height: auto;
+}
+/* #test{
+    margin: 0 auto;
+    max-width: 1700px;
+} */
 @media only screen and (max-width: 550px){
-#AWS{
-background-color: green;
+#AWS{background-color: green;}
+#aws-text{font-size: 10px;}
+#awsLogo{margin-left: 25px;}
+#banner{
+    justify-content: center;
 }
-#aws-text{
-font-size: 10px;
+#circleline{
+    width: 75vw;
+    height: 75vw;
+    border-radius: 37.5vw;
 }
-#awsLogo{
-
-margin-left: 25px;
-
+#circleout{
+    width: 73vw;
+    height: 73vw;
+    border-radius: 36.5vw;
 }
-
+#circleinner{
+    width: 69vw;
+    height: 69vw;
+    border-radius: 34.5vw;
+}
+#circletext{
+    font-size: 3vw;
+}
 }
