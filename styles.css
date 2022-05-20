@@ -159,16 +159,33 @@ background-color:gray;
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
 }
-
 /* Body of the tab */
+#overall{
+    display: flex;
+    flex-direction: column;
+}
 .main{
-    margin-top: 100px;
-    height: 1000px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 100px; */
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-image: url("stars.png");
+    background-color: black;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+}
+.marginstar{
+    background-image: url("stars.png");
+    background-color: black;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    height: 5em;
 }
 .textbody{
-    color: black;
+    /* color: black; */
     font-size: 1.1em;
     text-align: left;
     text-indent :2em;
@@ -212,30 +229,45 @@ background-color:gray;
     height: auto;
 }
 
-
-
-
 #footer{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    /* fix this later */
-    /* justify-content: s; */
-    align-items: baseline;
-    align-content: flex-start;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 5px;
 
-    /* gap: 10px 100px; */
-    position: relative;
-    bottom: 0px;
-    padding-bottom: 5px;
+    background-image: url("earth.jpg");
+    height: 65vh;
+    
+    /* filter: blur(2px); */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    
+    width: 100%;
+    /* margin-top: 5em; */
+    padding: 1em 2em 1em 2em;
+    gap:1em 3em;
+    
+    justify-content: space-between;
+    align-content: center;
+
+}
+.footerdiv{
+    /* border-color: black;
+    border-style: solid;
+    border-width: 1px; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 50px;
+    width: auto;
 }
 @media only screen and (max-width: 850px){
-    .row{
-        flex-wrap: wrap;
-    }
-
+    
 }
 
 @media only screen and (max-width: 550px){
