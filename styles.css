@@ -229,14 +229,11 @@ background-color:gray;
 }
 
 /* References */
-.referencepage{
-    background-color: rgb(37, 37, 37);
-    justify-content: center;
-}
 .reference{
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 2rem;
 }
 
 
