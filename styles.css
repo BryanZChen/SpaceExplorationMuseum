@@ -161,16 +161,20 @@ padding: 0;}
 
 /* Navigation Bar */
 #navbar{
+    z-index: 10000;
     padding-top: 0.5em;
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0px;
-    background-color: rgb(0, 26, 112);
+    background-color: rgb(2, 87, 161);
 }
-.nav-tabs .nav-link{
+/* .nav-tabs .nav-link{
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
+} */
+.nav-tabs {
+    border-bottom: 4px solid #ffffff;
 }
 /* Body of the tab */
 #overall{
@@ -178,7 +182,6 @@ padding: 0;}
     flex-direction: column;
 }
 .main{
-    padding-top: 5em;
     padding-bottom: 5em;
     display: flex;
     flex-direction: column;
@@ -187,6 +190,9 @@ padding: 0;}
     padding-right: 10vw;
 
 }
+.topmargin{
+    padding-top: 5em;
+}
 .stars{
     background-image: url("images/stars.png");
     background-color: black;
@@ -194,12 +200,20 @@ padding: 0;}
     background-position: center;
     background-size: contain;
 }
+.backgroundblur{
+    padding: 2em;
+    background-color: rgba(51, 51, 51, 0.4);
+    border-radius: 4px;
+}
 .textbody{
     /* color: black; */
     font-size: 1.1em;
     text-align: left;
     text-indent :2em;
 }
+/* .textbody .p{
+    backdrop-filter: blur(1px);
+} */
 /* Image in text */
 .figureleft{
     float: left;
@@ -251,29 +265,29 @@ padding: 0;}
 
 /* Timeline */
 section {
-    padding: 100px 0;
+    /* padding: 100px 0; */
 }
-html, body {
+section html, body {
     overflow-x: hidden;
 }
-body {
+section body {
     font-family: 'Roboto';
     font-size: 17px;
     font-weight: 400;
     background-color: #eee;
 }
-h1 {
+section h1 {
     font-size: 200%;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 400;
 }
-header {
+section header {
     background: #3f51b5;
     color: #fff;
     padding: 150px 0;
 }
-header p {
+section header p {
     font-family: 'Allura';
     color: rgba(255, 255, 255, .2);
     margin-bottom: 0;
@@ -285,7 +299,9 @@ header p {
 }
 .timeline::before {
     content: '';
+    /* background: #ffffff; */
     background: #c5cae9;
+
     width: 5px;
     height: 95%;
     position: absolute;
@@ -342,7 +358,8 @@ header p {
 .timeline-img {
     width: 30px;
     height: 30px;
-    background: #3f51b5;
+    background-color: rgb(2, 121, 161);
+    /* background: #3f51b5; */
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -383,6 +400,9 @@ section a:hover, section a:active, section a:focus {
     height: 200px;
     position: relative;
     margin-bottom: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
 }
 .timeline-img-header h2 {
     color: #fff;
@@ -390,18 +410,19 @@ section a:hover, section a:active, section a:focus {
     bottom: 5px;
     left: 20px;
 }
-blockquote {
+section blockquote {
     margin-top: 30px;
     color: #757575;
     border-left-color: #3f51b5;
     padding: 0 20px;
 }
-.date {
-    background: #ff4081;
+section .date {
+    background: #45a29e;
     display: inline-block;
     color: #fff;
     padding: 10px;
     position: absolute;
+    border-radius: 4px;
     top: 0;
     right: 0;
 }

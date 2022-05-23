@@ -8,7 +8,10 @@
 	<title>MoonLandingsWereFake</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 
@@ -21,7 +24,7 @@
 			<h2>Space Race</h2>
 		</div>
 	</div> -->
-	
+
 	<!-- <div id="AWS">
 		<div id="aws-text">
 		  <h2>Proudly Hosted By AWS!</h2>
@@ -53,54 +56,71 @@
 				role="tab" aria-controls="home" aria-selected="true" onclick="scrolltop()">Home</button>
 		</li>
 		<li class="nav-item" role="presentation">
-			<button class="nav-link text" id="timeline-tab" data-bs-toggle="tab" data-bs-target="#timeline" type="button"
-				role="tab" aria-controls="timeline" aria-selected="false" onclick="scrolltop()">Timeline</button>
+			<button class="nav-link text" id="timeline-tab" data-bs-toggle="tab" data-bs-target="#timeline"
+				type="button" role="tab" aria-controls="timeline" aria-selected="false"
+				onclick="scrolltop()">Timeline</button>
 		</li>
 		<li class="nav-item" role="presentation">
-			<button class="nav-link text" id="map-tab" data-bs-toggle="tab" data-bs-target="#map" type="button" role="button"
-				aria-controls="map" aria-selected="false" onclick="scrolltop()">Map</button>
+			<button class="nav-link text" id="map-tab" data-bs-toggle="tab" data-bs-target="#map" type="button"
+				role="button" aria-controls="map" aria-selected="false" onclick="scrolltop()">Map</button>
 		</li>
 		<li class="nav-item" role="presentation">
-			<button class="nav-link text" id="references-tab" data-bs-toggle="tab" data-bs-target="#references" type="button" role="tab"
-				aria-controls="references" aria-selected="false" onclick="scrolltop()">References</button>
+			<button class="nav-link text" id="references-tab" data-bs-toggle="tab" data-bs-target="#references"
+				type="button" role="tab" aria-controls="references" aria-selected="false"
+				onclick="scrolltop()">References</button>
 		</li>
 	</ul>
 	<!-- The Content in the tabs -->
 
-	<div id ="overall">
+	<div id="overall">
 		<div class="tab-content" id="myTabContent">
 			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 				<!-- Home Page -->
-				<div class="main stars">
-					<div>
+				<div class="main topmargin stars">
+					<div class="backgroundblur">
 						<p class="text textbody">
-							On October 4, 1957, the first man made satellite, Sputnik, was sent to orbit by the Soviet Union. A new
-							frontier, outer space, had opened. While ideas about space exploration date back to at least the 17th
-							century (1), space exploration only began to be realized in the second half of the twentieth century.
+							On October 4, 1957, the first man made satellite, Sputnik, was sent to orbit by the Soviet
+							Union. A new
+							frontier, outer space, had opened. While ideas about space exploration date back to at least
+							the 17th
+							century (1), space exploration only began to be realized in the second half of the twentieth
+							century.
 						</p>
 						<figure class="figureleft">
 							<img class="imageleft" src="images/Sputnik.jpg" alt="Picture of Sputinik" />
 							<figcaption class="text textlabel">Sputnik (1)</figcaption>
 						</figure>
 						<p class="text textbody">
-							From the 1950s to the 1980s, the Cold War pushed space exploration to new heights in the Space Race, a
-							technological competition for space superiority between the US and the USSR. The Soviets were very
-							successful, putting the first satellite in space (Sputnik, in 1957), the first person in space (Yuri
-							Gagarin, in 1961), and creating the first space station (Salyut, in 1971). On the US side, its main success
-							was with the Apollo program, which landed humans on the moon for the first time in 1969, and continued to
-							land astronauts on the moon until 1972. After the end of Apollo, both the US and USSR pivoted towards
-							developing space stations, Skylab for the US, and Mir for the USSR (1). The true end of the Space Race is
+							From the 1950s to the 1980s, the Cold War pushed space exploration to new heights in the
+							Space Race, a
+							technological competition for space superiority between the US and the USSR. The Soviets
+							were very
+							successful, putting the first satellite in space (Sputnik, in 1957), the first person in
+							space (Yuri
+							Gagarin, in 1961), and creating the first space station (Salyut, in 1971). On the US side,
+							its main success
+							was with the Apollo program, which landed humans on the moon for the first time in 1969, and
+							continued to
+							land astronauts on the moon until 1972. After the end of Apollo, both the US and USSR
+							pivoted towards
+							developing space stations, Skylab for the US, and Mir for the USSR (1). The true end of the
+							Space Race is
 							unclear, but ended no later than 1991, when the USSR dissolved.
 						</p>
 						<p class="text textbody">
-							The Apollo missions and the Saturn V rocket were followed by the Space Shuttle era, lasting until 2011. The
-							Shuttle Era also saw the construction of the International Space Station, a cooperative effort from 16
-							countries. The ISS has, and will continue to provide valuable scientific data for microgravity experiments,
+							The Apollo missions and the Saturn V rocket were followed by the Space Shuttle era, lasting
+							until 2011. The
+							Shuttle Era also saw the construction of the International Space Station, a cooperative
+							effort from 16
+							countries. The ISS has, and will continue to provide valuable scientific data for
+							microgravity experiments,
 							until at least 2024 (1).
 						</p>
 						<p class="text textbody">
-							Following the end of the Shuttle Era, private space flight began to expand rapidly in the 2010s. Private
-							companies, such as SpaceX, Blue Origin, and Rocket Lab, have all grown massively, resupplying the ISS,
+							Following the end of the Shuttle Era, private space flight began to expand rapidly in the
+							2010s. Private
+							companies, such as SpaceX, Blue Origin, and Rocket Lab, have all grown massively,
+							resupplying the ISS,
 							launching NASA satellites, and even providing space tourism.
 						</p>
 						<figure class="figureright">
@@ -108,155 +128,204 @@
 							<figcaption class="text textlabel">Sputnik (1)</figcaption>
 						</figure>
 						<p class="text textbody">
-							Throughout its history, space exploration has had enormous impacts on both the US and the world, in numerous
-							fields. The exploration of space has allowed for countless scientific discoveries with widespread impacts.
-							Just to name a few, space exploration has allowed for the discovery of the expansion of the universe
-							(through the Hubble Space Telescope, 3), water on mars (with the Mars Reconnaissance Orbiter, 4), and much
-							more. It has also paved the way for technological revolutions, such as the creation of GPS. Culturally,
-							space exploration has inspired people all across the globe. Apollo 11, the Space Shuttle, and Mars rovers
-							have become icons in today’s society. Ideas surrounding space exploration permeate literature, film, art,
-							music, and continue to influence society. Space exploration is undoubtedly a critical part of today’s
+							Throughout its history, space exploration has had enormous impacts on both the US and the
+							world, in numerous
+							fields. The exploration of space has allowed for countless scientific discoveries with
+							widespread impacts.
+							Just to name a few, space exploration has allowed for the discovery of the expansion of the
+							universe
+							(through the Hubble Space Telescope, 3), water on mars (with the Mars Reconnaissance
+							Orbiter, 4), and much
+							more. It has also paved the way for technological revolutions, such as the creation of GPS.
+							Culturally,
+							space exploration has inspired people all across the globe. Apollo 11, the Space Shuttle,
+							and Mars rovers
+							have become icons in today’s society. Ideas surrounding space exploration permeate
+							literature, film, art,
+							music, and continue to influence society. Space exploration is undoubtedly a critical part
+							of today’s
 							society, and will only grow in importance.
 						</p>
 					</div>
 				</div>
-				
+
 			</div>
 			<div class="tab-pane fade" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
 				<div class="main stars">
 					<section class="timeline">
 						<div class="container">
-						  <div class="timeline-item">
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content js--fadeInLeft">
-							  <h2>Title</h2>
-							  <div class="date">1 MAY 2016</div>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							  <a class="bnt-more" href="javascript:void(0)">More</a>
+							<div class="timeline-item">
 							</div>
-						  </div> 
-					  
-						  <div class="timeline-item">
-					  
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content timeline-card js--fadeInRight">
-							  <div class="timeline-img-header">
-								<h2>Card Title</h2>
-							  </div>
-							  <div class="date">25 MAY 2016</div>
-							  <p>The voyager probes are a pair of US space probes launched in 1977 to explore the outer solar system and beyond. Still operational today, the voyager probes are the longest operating spacecraft and the farthest from Earth. Voyager 2 visited Jupiter, Saturn, Uranus and Neptune, then reached interstellar space in 2018. The Voyager probes discovered Jupiter’s rings, volcanic activity on Io, and Uranus’ magnetic fields. Voyager 2 is the only spacecraft to explore Neptune and Uranus. Both probes contain a golden record, containing images, music, sounds, and text from earth, along with Earth’s location for any aliens who may discover the probe. These golden records serve as a “message in a bottle” and a time capsule for whoever may discover them.</p>
-							  <a class="bnt-more" href="javascript:void(0)">More</a>
+							<div class="timeline-item">
 							</div>
-					  
-						  </div>   
-					  
-						  <div class="timeline-item">
-					  
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content js--fadeInLeft">
-							  <div class="date">3 JUN 2016</div>
-							  <h2>Quote</h2>
-							  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+
+							<div class="timeline-item">
+								<div class="timeline-img"></div>
+								<div class="timeline-content js--fadeInLeft">
+									<h2>Title</h2>
+									<div class="date">1 MAY 2016</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+										omnis alias cupiditate
+										saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum
+										excepturi amet in dolores.
+										Alias, ullam.</p>
+									
+								</div>
 							</div>
-						  </div>   
-					  
-						  <div class="timeline-item">
-					  
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content js--fadeInRight">
-							  <h2>Title</h2>
-							  <div class="date">22 JUN 2016</div>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							  <a class="bnt-more" href="javascript:void(0)">More</a>
+
+							<div class="timeline-item">
+
+								<div class="timeline-img"></div>
+
+								<div class="timeline-content timeline-card js--fadeInRight">
+									<div class="timeline-img-header">
+										<h2>Card Title</h2>
+									</div>
+									<div class="date">25 MAY 2016</div>
+									<p>The voyager probes are a pair of US space probes launched in 1977 to explore the
+										outer solar system
+										and beyond. Still operational today, the voyager probes are the longest
+										operating spacecraft and the
+										farthest from Earth. Voyager 2 visited Jupiter, Saturn, Uranus and Neptune, then
+										reached
+										interstellar space in 2018. The Voyager probes discovered Jupiter’s rings,
+										volcanic activity on Io,
+										and Uranus’ magnetic fields. Voyager 2 is the only spacecraft to explore Neptune
+										and Uranus. Both
+										probes contain a golden record, containing images, music, sounds, and text from
+										earth, along with
+										Earth’s location for any aliens who may discover the probe. These golden records
+										serve as a “message
+										in a bottle” and a time capsule for whoever may discover them.</p>
+									
+								</div>
+
 							</div>
-						  </div>   
-					  
-						  <div class="timeline-item">
-					  
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content timeline-card js--fadeInLeft">
-							  <div class="timeline-img-header">
-								<h2>Card Title</h2>
-							  </div>
-							  <div class="date">10 JULY 2016</div>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							  <a class="bnt-more" href="javascript:void(0)">More</a>
+
+							<div class="timeline-item">
+
+								<div class="timeline-img"></div>
+
+								<div class="timeline-content js--fadeInLeft">
+									<div class="date">3 JUN 2016</div>
+									<h2>Quote</h2>
+									<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+										explicabo debitis omnis
+										dolor iste fugit totam quasi inventore!</blockquote>
+								</div>
 							</div>
-						  </div>   
-					  
-						  <div class="timeline-item">
-					  
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content timeline-card js--fadeInRight">
-							  <div class="timeline-img-header">
-								<h2>Card Title</h2>
-							  </div>
-							  <div class="date">30 JULY 2016</div>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							  <a class="bnt-more" href="javascript:void(0)">More</a>
+
+							<div class="timeline-item">
+
+								<div class="timeline-img"></div>
+
+								<div class="timeline-content js--fadeInRight">
+									<h2>Title</h2>
+									<div class="date">22 JUN 2016</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+										omnis alias cupiditate
+										saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum
+										excepturi amet in dolores.
+										Alias, ullam.</p>
+									
+								</div>
 							</div>
-						  </div>  
-					  
-						  <div class="timeline-item">
-					  
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content js--fadeInLeft">
-							  <div class="date">5 AUG 2016</div>
-							  <h2>Quote</h2>
-							  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+
+							<div class="timeline-item">
+
+								<div class="timeline-img"></div>
+
+								<div class="timeline-content timeline-card js--fadeInLeft">
+									<div class="timeline-img-header">
+										<h2>Card Title</h2>
+									</div>
+									<div class="date">10 JULY 2016</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+										omnis alias cupiditate
+										saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum
+										excepturi amet in dolores.
+										Alias, ullam.</p>
+									
+								</div>
 							</div>
-						  </div>   
-					  
-						  <div class="timeline-item">
-					  
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content timeline-card js--fadeInRight">
-							  <div class="timeline-img-header">
-								<h2>Card Title</h2>
-							  </div>
-							  <div class="date">19 AUG 2016</div>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							  <a class="bnt-more" href="javascript:void(0)">More</a>
+
+							<div class="timeline-item">
+
+								<div class="timeline-img"></div>
+
+								<div class="timeline-content timeline-card js--fadeInRight">
+									<div class="timeline-img-header">
+										<h2>Card Title</h2>
+									</div>
+									<div class="date">30 JULY 2016</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+										omnis alias cupiditate
+										saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum
+										excepturi amet in dolores.
+										Alias, ullam.</p>
+									
+								</div>
 							</div>
-						  </div>  
-					  
-						  <div class="timeline-item">
-					  
-							<div class="timeline-img"></div>
-					  
-							<div class="timeline-content js--fadeInLeft">
-							  <div class="date">1 SEP 2016</div>
-							  <h2>Title</h2>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							  <a class="bnt-more" href="javascript:void(0)">More</a>
+
+							<div class="timeline-item">
+
+								<div class="timeline-img"></div>
+
+								<div class="timeline-content js--fadeInLeft">
+									<div class="date">5 AUG 2016</div>
+									<h2>Quote</h2>
+									<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+										explicabo debitis omnis
+										dolor iste fugit totam quasi inventore!</blockquote>
+								</div>
 							</div>
-						  </div>   
-					  
-					  
-					  
+
+							<div class="timeline-item">
+
+								<div class="timeline-img"></div>
+
+								<div class="timeline-content timeline-card js--fadeInRight">
+									<div class="timeline-img-header">
+										<h2>Card Title</h2>
+									</div>
+									<div class="date">19 AUG 2016</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+										omnis alias cupiditate
+										saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum
+										excepturi amet in dolores.
+										Alias, ullam.</p>
+									
+								</div>
+							</div>
+
+							<div class="timeline-item">
+								<div class="timeline-img"></div>
+								<div class="timeline-content js--fadeInLeft">
+									<div class="date">1 SEP 2016</div>
+									<h2>Title</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+										omnis alias cupiditate
+										saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum
+										excepturi amet in dolores.
+										Alias, ullam.</p>
+									
+								</div>
+							</div>
 						</div>
-					  </section>
+					</section>
 				</div>
 			</div>
 			<div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
 				<div class="main">
 					<div id="layout">
-					<h2 id="textbody" class = "text">Museum Layout</h2>
-					<img id="map" src="images/FloorPlan.png" alt="Map of Museum"/>
-					<h6 id="textbody" class = "text">Designed by Ethan</h6>
-				</div>
+						<h2 id="textbody" class="text">Museum Layout</h2>
+						<img id="map" src="images/FloorPlan.png" alt="Map of Museum" />
+						<h6 id="textbody" class="text">Designed by Ethan</h6>
+					</div>
 				</div>
 			</div>
 			<div class="tab-pane fade" id="references" role="tabpanel" aria-labelledby="references-tab">
-				<div class="main stars">
+				<div class="main topmargin stars">
 					<h1 class="text">References</h1>
 					<div class="reference">
 						<p class="text">This is my first one</p>
@@ -265,17 +334,23 @@
 			</div>
 		</div>
 
-		
+
 		<div id="footer">
-			<div id = "footerimage"></div>
-			<div id = "footerpadding">
-				<div class = "footerdiv">
+			<div id="footerimage"></div>
+			<div id="footerpadding">
+				<div class="footerdiv">
 					<h2 class="text">This is the bottom of the page</h2>
 				</div>
 				<div class="footerdiv">
-					<a href="https://www.youtube.com/channel/UCPMBZsRSopd-u7vMnBJS-0A" target="_blank" rel="noopener noreferrer"><img class="logo" src="images/youtubelogo.png" alt="https://www.youtube.com/channel/UCPMBZsRSopd-u7vMnBJS-0A"></a>
-					<a href="https://www.instagram.com/esic04/?hl=en" target="_blank" rel="noopener noreferrer"><img class="logo" src="images/instagramlogo.png" alt="https://www.instagram.com/esic04/?hl=en"></a>
-					<a href="https://github.com/BryanZChen/SpaceRaceMuseum" target="_blank" rel="noopener noreferrer"><img class="logo" src="images/githublogo.png" alt="https://github.com/BryanZChen/SpaceRaceMuseum"></a>
+					<a href="https://www.youtube.com/channel/UCPMBZsRSopd-u7vMnBJS-0A" target="_blank"
+						rel="noopener noreferrer"><img class="logo" src="images/youtubelogo.png"
+							alt="https://www.youtube.com/channel/UCPMBZsRSopd-u7vMnBJS-0A"></a>
+					<a href="https://www.instagram.com/esic04/?hl=en" target="_blank" rel="noopener noreferrer"><img
+							class="logo" src="images/instagramlogo.png"
+							alt="https://www.instagram.com/esic04/?hl=en"></a>
+					<a href="https://github.com/BryanZChen/SpaceRaceMuseum" target="_blank"
+						rel="noopener noreferrer"><img class="logo" src="images/githublogo.png"
+							alt="https://github.com/BryanZChen/SpaceRaceMuseum"></a>
 				</div>
 			</div>
 		</div>
