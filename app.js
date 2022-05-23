@@ -1,7 +1,7 @@
 // let btn = document.getElementById("close");
 // let awsBanner = document.getElementById("AWS");
 
-// let nav2 = document.getElementsByClassName("nav-item");
+// // let nav2 = document.getElementsByClassName("nav-item");
 // btn.addEventListener("click", (e)=>{
 // awsBanner.style.display = "none";
 // e.stopPropagation();
