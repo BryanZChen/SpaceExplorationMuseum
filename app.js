@@ -79,9 +79,10 @@
   
     });
   })(jQuery);
-  // function scrolltop() {
-  //   document.getElementById("navtop").scrollIntoView();
-  // }
+  function scrolltop() {
+    var element =  document.getElementById("navtop");
+    element.scrollIntoView({behavior: "smooth"});
+  }
   // $(function () {
 
   //   window.sr = ScrollReveal();
