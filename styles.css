@@ -3,9 +3,9 @@ margin: 0;
 padding: 0;
 overflow-x: hidden;
 }
-html, body {
-    overflow-x:hidden 
-  } 
+.overflowx-hidden{
+    overflow-x:hidden;
+} 
   
 @font-face {
     font-family: AmazonEmber;
@@ -95,7 +95,7 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 }
 /* Image and Circles */
 .parallax{
-    background-image: url("images/jupiter3.png");
+    background-image: url("images/jupiter4.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
