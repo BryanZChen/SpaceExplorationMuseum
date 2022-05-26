@@ -2,6 +2,7 @@ body{
 margin: 0;
 padding: 0;
 overflow-x: hidden;
+overflow-y: scroll !important;
 }
 .overflowx-hidden{
     overflow-x:hidden;
@@ -180,6 +181,7 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     display: flex;
     justify-content: center;
     position: sticky;
+    position: -webkit-sticky;
     top: 0px;
     background-color: rgb(0, 0, 0);
 }
@@ -628,6 +630,7 @@ img {
 #footerpadding{
     /* background-color: rgb(0, 26, 112); */
     backdrop-filter: blur(5px);
+    filter:blur(5px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
