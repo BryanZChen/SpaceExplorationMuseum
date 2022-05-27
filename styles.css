@@ -487,7 +487,15 @@ img {
     left: 0;
   }
   .ag-timeline-card_img {
+    height: 100%;
+    /* height: 360px; */
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    display: block;
+
     width: 100%;
   }
   .ag-timeline-card_info {
