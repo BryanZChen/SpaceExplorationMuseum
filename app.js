@@ -8,6 +8,26 @@
 // });
 // awsBanner.addEventListener("click", ()=>location.href = "https://www.amazon.com/");
 // hometab.addEventListener("click", ()=>{
+
+
+const video = document.querySelector('video');
+let isPaused = false;
+video.play();
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio !== 1 && !video.paused) {
+      video.pause();
+      isPaused = true;
+    } else if (isPaused) {
+      video.play();
+      isPaused = false
+    }
+  });
+}, {
+  threshold: 0.5
+});
+observer.observe(video);
+
   (function ($) {
     $(function () {
   

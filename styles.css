@@ -96,7 +96,7 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 }
 /* Image and Circles */
 .parallax{
-    background-image: url("images/jupiter4.jpg");
+    background-image: url("images/jupiter.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -390,7 +390,7 @@ img {
   
     text-align: center;
     font-family: 'Montserrat-ExtraLight', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color: #FFF;
   
     -webkit-border-radius: 50%;
@@ -592,10 +592,22 @@ img {
   }
   
   @media only screen and (max-width: 479px) {
+    .ag-timeline-card_point{
+      font-size: 11px;
+    }
+  
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .ag-timeline-card_point{
+      font-size: 11px;
+    }
   
   }
   
   @media (min-width: 768px) and (max-width: 979px) {
+    .ag-timeline-card_point{
+      font-size: 11px;
+    }
     .ag-format-container {
       width: 750px;
     }
