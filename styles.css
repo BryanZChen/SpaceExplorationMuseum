@@ -473,7 +473,9 @@ img {
     height: 18px;
     width: 18px;
     margin-top: 20px;
-    background-color: #282828;
+    background-color: #676767;
+
+    /* background-color: #282828; */
   
     z-index: -1;
     position: absolute;
