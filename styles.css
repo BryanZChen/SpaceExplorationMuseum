@@ -208,7 +208,7 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     /* margin-top: 100px; */
     padding-left: 10vw;
     padding-right: 10vw;
-    width: 100%;
+    width: 100vw;
 }
 .topmargin{
     padding-top: 5em;
@@ -260,18 +260,28 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 }
 
 /* Map */
+.tab-content{
+  background-image: url("images/stars.png");
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: row;
+}
 #layout{
     /* flex: auto; */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    max-width: 20em;
-    margin-right: 200px;
-    background-color: gold;
+    max-width: 80vw;
+    margin-bottom: 5em;
+    /* margin-right: 200px; */
+    /* background-image: url("images/layouttest.svg"); */
 }
 #map{
-    margin-top: 2em;
-    max-width: 600px;
+    margin-top: 1em;
+    max-width: 90%;
     height: auto;
 }
 
