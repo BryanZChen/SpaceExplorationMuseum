@@ -373,10 +373,13 @@ img {
   }
   
   .ag-timeline-card_box {
-    padding: 0 0 20px 50%;
+    padding: 0 0 23px 50%;
+    display: flex;
+    align-items: center;
   }
   .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
-    padding: 0 50.5% 20px 0;
+    padding: 0 50.5% 22px 0;
+    justify-content: flex-end;
   }
   .ag-timeline-card_point-box {
     display: inline-block;
@@ -415,7 +418,9 @@ img {
     display: inline-block;
   }
   .ag-timeline-card_meta {
-    margin: 10px 0 0;
+    /* margin: 10px 0 0; */
+    margin: 0 0 0;
+
   
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 28px;
@@ -541,7 +546,8 @@ img {
   
     .ag-timeline-card_box,
     .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
-      padding: 0 0 20px;
+      padding: 0 0 24px;
+      justify-content: flex-start;
     }
     .ag-timeline-card_meta-box {
       display: none;
