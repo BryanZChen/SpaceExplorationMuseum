@@ -96,7 +96,7 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 }
 /* Image and Circles */
 .parallax{
-    background-image: url("images/jupiter.jpg");
+    background-image: url("images/mars.png");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
