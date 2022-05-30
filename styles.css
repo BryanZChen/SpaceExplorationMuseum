@@ -97,14 +97,27 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 /* Image and Circles */
 .parallax{
     background-image: url("images/mars.png");
+    background-color: #000000;
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
     margin: 0;
-
     display: block;
+    z-index: -100;
+}
+#paratext{
+  position: fixed;
+  z-index:0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  padding: 0 100px;
+
+  text-align: center;
 }
 #circleline{
     position: absolute;
@@ -198,10 +211,13 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 }
 /* Body of the tab */
 #overall{
+    z-index: 999;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .main{
+    z-index: 999;
     padding-bottom: 5em;
     display: flex;
     flex-direction: column;
@@ -286,11 +302,46 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 }
 
 /* References */
+.referencepage{
+  display: flex;
+  flex-direction: column;
+}
+.referencetitles{
+  margin-top: 4em;
+  font-size: 3em;
+}
 .reference {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
     margin-top: 2rem;
+    font-size: 1.5em;
+}
+.block{
+  display: flex;
+  text-align: left;
+  /* flex-shrink: 1;
+  font-family: 'Montserrat-ExtraLight', sans-serif;
+  color: white; */
+  padding-left: 40px;
+  text-indent: -40px;
+  margin-top: 1.5em;
+}
+.referencelink{
+  margin-top: 4em;  
+  display: flex;
+  align-items: flex-start;
+}
+.link{
+  color:white;
+  text-decoration: none;
+}
+.link:hover{
+  color:red;
+}
+a:active {
+  color: blue;
 }
 
 /* Timeline */
