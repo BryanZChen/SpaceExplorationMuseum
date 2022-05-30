@@ -9,6 +9,17 @@
 // awsBanner.addEventListener("click", ()=>location.href = "https://www.amazon.com/");
 // hometab.addEventListener("click", ()=>{
 
+// Add
+let add = document.querySelector('.add')
+let addIcon = document.querySelector('.add img')
+let xandr = document.querySelector('.xandr-div')
+let xandrClose = document.querySelector('.xander-close ')
+add.addEventListener("click", ()=>location.href = "https://www.nestle.com/brands/water");
+addIcon.addEventListener("click", (e)=>{e.stopPropagation();xandr.style.display = "block";addIcon.style.display="none"});
+addIcon.addEventListener("mouseover", ()=>addIcon.src = "https://choices.trustarc.com/get?name=admarker-full-tr.png");
+addIcon.addEventListener("mouseout", ()=>addIcon.src = "https://choices.trustarc.com/get?name=admarker-icon-tr.png");
+xandrClose.addEventListener("click", (e)=>{e.stopPropagation();xandr.style.display = "none";addIcon.style.display="block"});
+
 
 const video = document.querySelector('video');
 let isPaused = false;
