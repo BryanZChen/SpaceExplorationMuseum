@@ -250,11 +250,14 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 
 /* Image in text */
 .figureleft{
-    float: left;
+  float: left;
+  margin-top: 1.25em;  
 }
 .figureright{
-    float: right;
+  float: right;
+  margin-top: 1.25em;  
 }
+
 .imageleft{
     margin-right: 2em;
     max-width: 15em;
@@ -262,15 +265,20 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     border:2px solid white;
 }
 .imageright{
-    margin-left: 2em;
-    max-width: 15em;
-    border-radius: 0.5em;
-    border:2px solid white;
+  margin-left: 2em;
+  max-width: 15em;
+  border-radius: 0.5em;
+  border:2px solid white;
 }
-.textlabel{
-    color: black;
-    margin-top: 0;
-    font-size: 0.7em; 
+.textlabelleft{
+  transform: translate(-1em, 0);
+  margin-top: 0;
+  font-size: 1em; 
+}
+.textlabelright{
+  transform: translate(1em, 0);
+  margin-top: 0;
+  font-size: 1em; 
 }
 
 /* Map */
@@ -327,6 +335,7 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
   margin-top: 1.5em;
 }
 .referencelink{
+  text-decoration: underline;     
   margin-top: 4em;  
   display: flex;
   align-items: flex-start;
