@@ -237,6 +237,7 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     background-size: contain;
 }
 .backgroundblur{
+
     padding: 2em;
     background-color: rgba(51, 51, 51, 0.4);
     border-radius: 4px;
@@ -325,20 +326,20 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     font-size: 1em;
 }
 .block{
-  display: flex;
+  width: 100%;
   text-align: left;
   /* flex-shrink: 1;
   font-family: 'Montserrat-ExtraLight', sans-serif;
   color: white; */
-  padding-left: 40px;
-  text-indent: -40px;
+  padding-left: 2em;
+  text-indent: -2em;
   margin-top: 1.5em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .referencelink{
   text-decoration: underline;     
-  margin-top: 4em;  
-  display: flex;
-  align-items: flex-start;
+  margin-top: 4em;
 }
 .link{
   color:white;
@@ -883,5 +884,9 @@ img {
 }
 #circletext{
     font-size: 3vw;
+}
+.block{
+  padding-left: 0;
+  text-indent: 0;
 }
 }
