@@ -724,10 +724,10 @@ img {
     align-content: flex-end;
 }
 #footerpadding{
-    /* background-color: rgb(0, 26, 112); */
+     background-color: rgba(69, 69, 69, 0.556); 
     
     /* filter:blur(5px);  */
-    backdrop-filter: blur(5px);
+    /*backdrop-filter: blur(5px); */
     -webkit-backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
     display: flex;
