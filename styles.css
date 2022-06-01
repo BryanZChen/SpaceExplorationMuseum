@@ -761,6 +761,9 @@ img {
     height: 30px;
     width: auto;
 }
+h5.text{
+  margin-bottom: 0;
+}
 /* Add */
 
 .add {
