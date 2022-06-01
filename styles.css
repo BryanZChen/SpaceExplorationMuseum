@@ -557,7 +557,7 @@ img {
     margin-right: calc(-18px / 2);
   }
   .ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow {
-    margin-left: -10px;
+    margin-left: -9px;
   
     right: auto;
     left: 0;
