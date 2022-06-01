@@ -349,7 +349,7 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 }
 .link{
   color:white;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .link:hover{
   color:red;
