@@ -349,13 +349,16 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
 }
 .link{
   color:white;
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 .link:hover{
   color:red;
 }
-a:active {
-  color: blue;
+.textlink{
+  color:white;
+}
+.textlink:hover{
+  color:red;
 }
 
 /* Timeline */
