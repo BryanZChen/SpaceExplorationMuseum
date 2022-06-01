@@ -275,11 +275,13 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
   transform: translate(-1em, 0);
   margin-top: 0;
   font-size: 1em; 
+  margin-bottom: 1em;
 }
 .textlabelright{
   transform: translate(1em, 0);
   margin-top: 0;
   font-size: 1em; 
+  margin-bottom: 1em;
 }
 
 /* Map */
@@ -892,6 +894,16 @@ h5.text{
 #circletext{
     font-size: 3vw;
 }
+
+.imageleft{
+  margin: 0 0 0 0;
+  max-width: 100%;
+}
+.imageright{
+  margin: 0 0 0 0;
+  max-width: 100%;
+}
+
 .block{
   padding-left: 0;
   text-indent: 0;
