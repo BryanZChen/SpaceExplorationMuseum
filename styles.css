@@ -355,11 +355,13 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
   color:red;
 }
 .textlink{
-  color:white;
+  /* color:rgb(255, 255, 255); */
+  color: rgb(255, 58, 58);  
+  text-decoration: none; 
 }
 .textlink:hover{
-  color:red;
-}
+  color: rgb(255, 58, 58);
+} 
 
 /* Timeline */
 img {
