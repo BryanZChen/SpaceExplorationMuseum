@@ -736,7 +736,7 @@ img {
     align-content: flex-end;
 }
 #footerpadding{
-    background-color: rgba(84, 84, 84, 0.725); 
+    background-color: rgba(58, 58, 58, 0.725); 
     
     display: flex;
     flex-direction: row;
