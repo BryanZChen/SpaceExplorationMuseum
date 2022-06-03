@@ -102,11 +102,12 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     background-image: url("images/mars.png");
     background-color: #000000;
     height: 100vh;
+    min-height: -webkit-fill-available;
     /* min-height: 100vh;
     height: 100%;
     min-height: -webkit-fill-available; */
 
-    height: var(--app-height);
+    /* height: var(--app-height); */
     /* max-width: 100%;  */
     
     background-attachment: fixed;
