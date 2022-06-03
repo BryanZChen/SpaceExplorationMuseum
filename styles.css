@@ -248,6 +248,9 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     text-align: left;
     text-indent :2em;
 }
+.caption{
+  font-size: 0.85em;
+}
 
 /* Image in text */
 .figureleft{
@@ -292,6 +295,8 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
   display: flex;
   justify-content: center;
   align-items: row;
+}
+.layoutpage{
 }
 #layout{
     /* flex: auto; */
