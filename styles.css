@@ -99,6 +99,8 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     background-image: url("images/mars.png");
     background-color: #000000;
     height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
