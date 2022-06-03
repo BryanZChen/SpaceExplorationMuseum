@@ -1,24 +1,22 @@
 
-html {
-  height: -webkit-fill-available;
+:root {
+  --app-height: 100%;
 }
+:root { background-attachment: fixed; }
 body{
 margin: 0;
 padding: 0;
 overflow-x: hidden;
 overflow-y: scroll !important;
 
-min-height: 100vh;
-min-height: -webkit-fill-available;
+width: 100vw;
+height: 100vh;
+height: var(--app-height);
 }
-:root { background-attachment: fixed; }
+
 .overflowx-hidden{
     overflow-x:hidden;
-} 
-:root {
-  --app-height: 100%;
-}
-  
+}   
 @font-face {
     font-family: AmazonEmber;
     src: url(fonts/Amazon-Ember-Medium.ttf);
