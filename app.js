@@ -20,6 +20,14 @@
 // addIcon.addEventListener("mouseout", ()=>addIcon.src = "https://choices.trustarc.com/get?name=admarker-icon-tr.png");
 // xandrClose.addEventListener("click", (e)=>{e.stopPropagation();xandr.style.display = "none";addIcon.style.display="block"});
 
+// height fix
+const appHeight = () => {
+  const doc = document.documentElement
+  doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+}
+window.addEventListener('resize', appHeight)
+appHeight()
+
 
 const video = document.querySelector('video');
 let isPaused = false;
