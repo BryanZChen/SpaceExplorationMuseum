@@ -223,8 +223,16 @@ src: url(fonts/Montserrat-ExtraLight.ttf);
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
 }
+.nav-link:focus{
+  color: red;
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  outline: none;
+}
 .nav-tabs {
     border-bottom: 4px solid #ffffff;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
 }
 /* Body of the tab */
 #overall{
